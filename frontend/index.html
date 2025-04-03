@@ -10,7 +10,7 @@
   <style>
     /* Existing styles */
     #home-main {
-      background-image: url("{{ url_for('static', filename='images/devops.png') }}");
+      background-image: url("url_for( filename='devops.png')");
       background-size: cover;
       background-position: center;
       height: 100vh;
@@ -56,7 +56,7 @@
           <h2>Welcome to My Portfolio</h2>
           <p>I'm a passionate developer dedicated to creating cutting-edge web experiences.</p>
           <div class="computer-container">
-            <img src="{{ url_for('static', filename='images/computer.gif') }}" alt="Hands Typing on Computer" class="rotating-computer">
+            <img src="computer.gif" alt="Hands Typing on Computer" class="rotating-computer">
           </div>
           <a href="/contact">
             <button class="move-button"><h3>Talk To Me</h3></button>
@@ -101,6 +101,6 @@
     </footer>
   </main>
 
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="script.js'"></script>
 </body>
 </html>
