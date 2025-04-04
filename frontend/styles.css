@@ -13,23 +13,48 @@ body {
 header {
     background: linear-gradient(to right, #007bff, #00c6ff);
     color: white;
-  
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Navigation styling */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+/* Navigation links */
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
     color: yellow;
+}
+
+/* Responsive Navigation for Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
 }
 
 
@@ -169,7 +194,7 @@ nav a:hover {
 .intro-content img {
     width: 150px;
     height: 150px;
-  
+    display: block; margin-left: auto; margin-right: auto;
     border-radius: 60%;
     border: 4px solid #007bff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -195,15 +220,15 @@ nav a:hover {
 }
 /* Apply Background Images */
 .coding {
-    background-image: url("../static/images/fullstack.jpeg");
+    background-image: url("fullstack.jpeg");
 }
 
 .devops {
-    background-image: url("../static/images/devops.png");
+    background-image: url("devops.png");
 }
 
 .cybersecurity {
-    background-image: url("../static/images/cybersecurity.jpeg");
+    background-image: url("cybersecurity.jpeg");
 }
 
 /* Hover Effect */

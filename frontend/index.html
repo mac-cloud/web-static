@@ -10,7 +10,7 @@
   <style>
     /* Existing styles */
     #home-main {
-      background-image: url("url_for( filename='devops.png')");
+      background-image: url("devops.png");
       background-size: cover;
       background-position: center;
       height: 100vh;
@@ -27,17 +27,18 @@
 </head>
 <body>
   <header>
-    <h1>My Portfolio</h1>
+    <h1>Portfolio</h1>
     <nav>
-      <a href="">Home</a>
-      <a href="about.html">About</a>
-      <a href="project-list.html">Projects</a>
-      <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project-list.html">Projects</a>
+        <a href="contact.html">Contact</a>
     </nav>
+</header>
     
     <!-- New section for computer and volunteering activities -->
     
-  </header>
+
   <section id="activities">
     <div class="activities-container">
       <div class="activity">Computer Lab Workshops</div>
@@ -50,15 +51,17 @@
   <main id="home-main">
     <section id="intro">
       <div class="intro-content">
-        <img src="image.jpeg" alt="My Profile">
+       
         <div class="text-content">
-          <h2>Hi, I'm Mbugua</h2>
+          <img src="image.jpeg" alt="My Profile" 
+          style=" margin-top: 500px; width: 50%; max-width: 150px; height: 150px; display: block; margin-left: auto; margin-right: auto;">
+          <h2 >Hi, I'm Mbugua</h2>
           <h2>Welcome to My Portfolio</h2>
           <p>I'm a passionate developer dedicated to creating cutting-edge web experiences, Automation and Containerization of application in different cloud providers.</p>
           <div class="computer-container">
             <img src="computer.gif" alt="Hands Typing on Computer" class="rotating-computer">
           </div>
-          <a href="/contact">
+          <a href="contact.html">
             <button class="move-button"><h3>Talk To Me</h3></button>
           </a>
         </div>
@@ -68,7 +71,6 @@
     <!-- Skills Section with Background Images -->
     <section id="skills">
       <div class="skill-card coding">
-        <img src="fullstack.jpeg" alt="fullstack" style="width: 100%; height: 100%">
         <div class="overlay">
           <h3>Full-Stack Development</h3>
           <p style="color: white">Building robust web applications using Python, JavaScript, React, and Django.</p>
@@ -76,7 +78,7 @@
       </div>
 
       <div class="skill-card devops">
-        <img src="devops.png" alt="devops" style="width: 100%; height: 100%">
+        
         <div class="overlay">
           <h3>DevOps & Cloud</h3>
           <p style="color: white">Experience with Docker, Kubernetes, CI/CD, and cloud deployments on Azure.</p>
@@ -84,7 +86,7 @@
       </div>
 
       <div class="skill-card cybersecurity">
-        <img src="cybersecurity.jpeg" alt="networking" style="width: 100%; height: 100%">
+        
         <div class="overlay">
           
             <h3>Networking</h3>
@@ -106,6 +108,6 @@
     </footer>
   </main>
 
-  <script src="script.js'"></script>
+ 
 </body>
 </html>
