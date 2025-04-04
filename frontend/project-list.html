@@ -8,46 +8,66 @@
 </head>
 <body>
     <header>
-
-
-       
         <h1>My Portfolio</h1>
         <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/project-list">Projects</a>
-            <a href="/contact">Contact</a>
-        </nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project-list.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </nav>
     </header>
+
     <section id="activities">
         <div class="activities-container">
-          <div class="activity">Computer Lab Workshops</div>
-          <div class="activity">Community Volunteering(Nairobi DevOps Community)</div>
-          <div class="activity">Coding Bootcamp(Karatina University)</div>
-          <div class="activity">Tech Meetups</div>
-          <!-- Add more activities as needed -->
+            <div class="activity">Computer Lab Workshops</div>
+            <div class="activity">Community Volunteering (Nairobi DevOps Community)</div>
+            <div class="activity">Coding Bootcamp (Karatina University)</div>
+            <div class="activity">Tech Meetups</div>
         </div>
-      </section>
+    </section>
+
     <h1 style="color: #007bff">Projects</h1>
 
     <div id="projects-container">
-        {% for project in projects %}
-        <a href="{{ project.github_link }}" target="_blank" rel="noopener noreferrer">
+        
+          
+       
             <div class="project-card">
-                <img src="{{ project.image_url }}" alt="{{ project.title }}">
+                <h3>Madaraka Express Booking System </h3>
+                <a href="https://github.com/mac-cloud/RailConnect.git" target="_blank" rel="noopener noreferrer">
+                <img src="images/sgr.jpeg" alt="Project 2">
                 <div class="project-content">
-                    <h3>{{ project.title }}</h3>
-                    <p>{{ project.description }}</p>
                     <p class="github-button">View on GitHub</p>
-                
+                </a>
+                <p>A comprehensive booking system for Madaraka Express that allows passengers to check train schedules, book tickets, manage reservations, and receive real-time travel updates. The system ensures a smooth and efficient ticketing experience by integrating secure payment gateways and user-friendly interfaces.</p>
                 </div>
-               
             </div>
-            
-        </a>
-        {% endfor %}
+       
+
+            <div class="project-card">
+                <h3>Deploying Applications in a Multicloud Environment</h3>
+                <a href="https://github.com/mac-cloud/INFRA-MULTICLOUD.git" target="_blank" rel="noopener noreferrer">
+                <img src="images/multicloud.jpeg" alt="Project 2">
+                <div class="project-content">
+                    <p class="github-button">View on GitHub</p>
+                </a>
+                    <p>A cloud infrastructure automation project that focuses on deploying applications in a multicloud environment. The project utilizes Terraform and Kubernetes to provision and manage infrastructure across multiple cloud providers (AWS, Azure, GCP), ensuring high availability, scalability, and cost optimization.</p>
+                    
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>E-commerce Website</h3>
+                <a href="https://github.com/mac-cloud/QuatumCart_E-commerce.git" target="_blank" rel="noopener noreferrer">
+                <img src="images/shop.jpeg" alt="Project 2">
+                <div class="project-content">
+                    <p class="github-button">View on GitHub</p>
+                </a>
+                <p>An advanced e-commerce platform designed to provide a seamless shopping experience. Features include product browsing, secure checkout, user authentication, inventory management, and order tracking. Built using modern web technologies with an optimized backend to handle transactions efficiently.</p>
+                </div>
+            </div>
     </div>
     
+
     <footer>
         <p>&copy; 2025 MacCloud Solutions. All rights reserved.</p>
         <div class="social-icons">
