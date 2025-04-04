@@ -538,13 +538,13 @@ footer .social-icons i {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 10px;
-    margin-left: 300px;
+    margin-left: 100px;
 }
 
 #about-intro .text-content p {
     font-size: 1.2em;
-    color: #555;
-    margin-left: 300px;
+    color:black;
+    margin-left: 150px;
 }
 
 /* Skills Section */
